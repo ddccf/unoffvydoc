@@ -7,20 +7,20 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Running on Bare Metal &mdash; VyOS 1.4.x (sagitta) documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
-      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../static/sphinx-design.min.css?v=95c83b7e" />
 
   
-    <link rel="shortcut icon" href="../_static/vyos-logo-icon.png"/>
-      <script src="../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=8f5ed1cd"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script src="../_static/js/theme.js"></script>
+    <link rel="shortcut icon" href="../static/vyos-logo-icon.png"/>
+      <script src="../static/jquery.js?v=5d32c60e"></script>
+      <script src="../static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../static/documentation_options.js?v=8f5ed1cd"></script>
+      <script src="../static/doctools.js?v=9bcbadda"></script>
+      <script src="../static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../static/design-tabs.js?v=f930bc37"></script>
+    <script src="../static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="copyright" title="Copyright" href="../copyright.html" />
@@ -28,29 +28,29 @@
     <link rel="prev" title="Oracle" href="cloud/oracel.html" />
     <style>#vyos-header-iframe{position:fixed;top:0;left:0;right:0;z-index:999999999;width:100%;border:none}</style>
     <style>#vyos-footer-iframe{width:100%;border:none}</style>
-    <link href="../_static/css/custom.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/lists.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/hints.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/headers.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/breadcrumbs.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/linkButtons.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/text.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/leftSidebar.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/scrolls.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/tables.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/installation/running-on-bare-metal.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/code-snippets.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/separate-commands.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/configuration/index.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/datatables.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/custom.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/lists.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/hints.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/headers.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/breadcrumbs.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/linkButtons.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/text.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/leftSidebar.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/scrolls.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/tables.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/installation/running-on-bare-metal.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/code-snippets.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/separate-commands.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/configuration/index.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/datatables.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script type="text/javascript" charset="utf8" src="../_static/js/datatables.js"></script>
-    <script type="text/javascript" charset="utf8" src="../_static/js/tables.js"></script>
-    <script type="text/javascript" charset="utf8" src="../_static/js/codecopier.js"></script>
-    <script type="text/javascript" charset="utf8" src="../_static/js/sidebar.js"></script>
-    <script type="text/javascript" charset="utf8" src="../_static/js/footer.js"></script>
+    <script type="text/javascript" charset="utf8" src="../static/js/datatables.js"></script>
+    <script type="text/javascript" charset="utf8" src="../static/js/tables.js"></script>
+    <script type="text/javascript" charset="utf8" src="../static/js/codecopier.js"></script>
+    <script type="text/javascript" charset="utf8" src="../static/js/sidebar.js"></script>
+    <script type="text/javascript" charset="utf8" src="../static/js/footer.js"></script>
     </script>
 
 </head>
@@ -65,7 +65,7 @@
           
           <a href="../index.html" class="icon icon-home">
             VyOS
-              <img src="../_static/vyos-logo.png" class="logo" alt="Logo"/>
+              <img src="../static/vyos-logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -166,7 +166,7 @@
           <li class="breadcrumb-item"><a href="index.html">Installation and Image Management</a></li>
       <li class="breadcrumb-item active">Running on Bare Metal</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/installation/vyos-on-baremetal.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../sources/installation/vyos-on-baremetal.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -208,39 +208,39 @@ motherboard).</p>
 <section id="pictures">
 <h3>Pictures<a class="headerlink" href="#pictures" title="Link to this heading"></a></h3>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/1u_vyos_back.jpg"><img alt="CSE-505-203B Back" src="../_images/1u_vyos_back.jpg" style="width: 966.25px; height: 396.0px;" />
+<a class="reference internal image-reference" href="../images/1u_vyos_back.jpg"><img alt="CSE-505-203B Back" src="../images/1u_vyos_back.jpg" style="width: 966.25px; height: 396.0px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/1u_vyos_front.jpg"><img alt="CSE-505-203B Front" src="../_images/1u_vyos_front.jpg" style="width: 959.75px; height: 226.5px;" />
+<a class="reference internal image-reference" href="../images/1u_vyos_front.jpg"><img alt="CSE-505-203B Front" src="../images/1u_vyos_front.jpg" style="width: 959.75px; height: 226.5px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/1u_vyos_front_open_1.jpg"><img alt="CSE-505-203B Open 1" src="../_images/1u_vyos_front_open_1.jpg" style="width: 993.75px; height: 368.25px;" />
+<a class="reference internal image-reference" href="../images/1u_vyos_front_open_1.jpg"><img alt="CSE-505-203B Open 1" src="../images/1u_vyos_front_open_1.jpg" style="width: 993.75px; height: 368.25px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/1u_vyos_front_open_2.jpg"><img alt="CSE-505-203B Open 2" src="../_images/1u_vyos_front_open_2.jpg" style="width: 871.0px; height: 532.75px;" />
+<a class="reference internal image-reference" href="../images/1u_vyos_front_open_2.jpg"><img alt="CSE-505-203B Open 2" src="../images/1u_vyos_front_open_2.jpg" style="width: 871.0px; height: 532.75px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/1u_vyos_front_open_3.jpg"><img alt="CSE-505-203B Open 3" src="../_images/1u_vyos_front_open_3.jpg" style="width: 876.75px; height: 607.75px;" />
+<a class="reference internal image-reference" href="../images/1u_vyos_front_open_3.jpg"><img alt="CSE-505-203B Open 3" src="../images/1u_vyos_front_open_3.jpg" style="width: 876.75px; height: 607.75px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/1u_vyos_front_10ge_open_1.jpg"><img alt="CSE-505-203B w/ 10GE Open 1" src="../_images/1u_vyos_front_10ge_open_1.jpg" style="width: 1004.5px; height: 595.75px;" />
+<a class="reference internal image-reference" href="../images/1u_vyos_front_10ge_open_1.jpg"><img alt="CSE-505-203B w/ 10GE Open 1" src="../images/1u_vyos_front_10ge_open_1.jpg" style="width: 1004.5px; height: 595.75px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/1u_vyos_front_10ge_open_2.jpg"><img alt="CSE-505-203B w/ 10GE Open 2" src="../_images/1u_vyos_front_10ge_open_2.jpg" style="width: 1008.0px; height: 756.0px;" />
+<a class="reference internal image-reference" href="../images/1u_vyos_front_10ge_open_2.jpg"><img alt="CSE-505-203B w/ 10GE Open 2" src="../images/1u_vyos_front_10ge_open_2.jpg" style="width: 1008.0px; height: 756.0px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/1u_vyos_front_10ge_open_3.jpg"><img alt="CSE-505-203B w/ 10GE Open 3" src="../_images/1u_vyos_front_10ge_open_3.jpg" style="width: 1008.0px; height: 756.0px;" />
+<a class="reference internal image-reference" href="../images/1u_vyos_front_10ge_open_3.jpg"><img alt="CSE-505-203B w/ 10GE Open 3" src="../images/1u_vyos_front_10ge_open_3.jpg" style="width: 1008.0px; height: 756.0px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/1u_vyos_front_10ge_open_4.jpg"><img alt="CSE-505-203B w/ 10GE Open" src="../_images/1u_vyos_front_10ge_open_4.jpg" style="width: 1008.0px; height: 756.0px;" />
+<a class="reference internal image-reference" href="../images/1u_vyos_front_10ge_open_4.jpg"><img alt="CSE-505-203B w/ 10GE Open" src="../images/1u_vyos_front_10ge_open_4.jpg" style="width: 1008.0px; height: 756.0px;" />
 </a>
 </figure>
 </section>
@@ -383,29 +383,29 @@ noise.</p>
 <section id="rack-mount">
 <h4>Rack Mount<a class="headerlink" href="#rack-mount" title="Link to this heading"></a></h4>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/apu4_rack_1.jpg"><img alt="APU4 rack closed" src="../_images/apu4_rack_1.jpg" style="width: 975.75px; height: 176.75px;" />
+<a class="reference internal image-reference" href="../images/apu4_rack_1.jpg"><img alt="APU4 rack closed" src="../images/apu4_rack_1.jpg" style="width: 975.75px; height: 176.75px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/apu4_rack_2.jpg"><img alt="APU4 rack front" src="../_images/apu4_rack_2.jpg" style="width: 1001.75px; height: 298.0px;" />
+<a class="reference internal image-reference" href="../images/apu4_rack_2.jpg"><img alt="APU4 rack front" src="../images/apu4_rack_2.jpg" style="width: 1001.75px; height: 298.0px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/apu4_rack_3.jpg"><img alt="APU4 rack module #1" src="../_images/apu4_rack_3.jpg" style="width: 881.25px; height: 624.5px;" />
+<a class="reference internal image-reference" href="../images/apu4_rack_3.jpg"><img alt="APU4 rack module #1" src="../images/apu4_rack_3.jpg" style="width: 881.25px; height: 624.5px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/apu4_rack_4.jpg"><img alt="APU4 rack module #2" src="../_images/apu4_rack_4.jpg" style="width: 864.5px; height: 710.0px;" />
+<a class="reference internal image-reference" href="../images/apu4_rack_4.jpg"><img alt="APU4 rack module #2" src="../images/apu4_rack_4.jpg" style="width: 864.5px; height: 710.0px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/apu4_rack_5.jpg"><img alt="APU4 rack module #3 with PSU" src="../_images/apu4_rack_5.jpg" style="width: 756.0px; height: 1008.0px;" />
+<a class="reference internal image-reference" href="../images/apu4_rack_5.jpg"><img alt="APU4 rack module #3 with PSU" src="../images/apu4_rack_5.jpg" style="width: 756.0px; height: 1008.0px;" />
 </a>
 </figure>
 <section id="vyos-custom-print">
 <h5>VyOS custom print<a class="headerlink" href="#vyos-custom-print" title="Link to this heading"></a></h5>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/apu4_rack_vyos_print.jpg"><img alt="APU4 custom VyOS powder coat" src="../_images/apu4_rack_vyos_print.jpg" style="width: 982.25px; height: 291.0px;" />
+<a class="reference internal image-reference" href="../images/apu4_rack_vyos_print.jpg"><img alt="APU4 custom VyOS powder coat" src="../images/apu4_rack_vyos_print.jpg" style="width: 982.25px; height: 291.0px;" />
 </a>
 </figure>
 </section>
@@ -413,19 +413,19 @@ noise.</p>
 <section id="desktop-bench-top">
 <h4>Desktop / Bench Top<a class="headerlink" href="#desktop-bench-top" title="Link to this heading"></a></h4>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/apu4_desk_1.jpg"><img alt="APU4 desktop closed" src="../_images/apu4_desk_1.jpg" style="width: 916.75px; height: 465.25px;" />
+<a class="reference internal image-reference" href="../images/apu4_desk_1.jpg"><img alt="APU4 desktop closed" src="../images/apu4_desk_1.jpg" style="width: 916.75px; height: 465.25px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/apu4_desk_2.jpg"><img alt="APU4 desktop closed" src="../_images/apu4_desk_2.jpg" style="width: 792.75px; height: 441.5px;" />
+<a class="reference internal image-reference" href="../images/apu4_desk_2.jpg"><img alt="APU4 desktop closed" src="../images/apu4_desk_2.jpg" style="width: 792.75px; height: 441.5px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/apu4_desk_3.jpg"><img alt="APU4 desktop back" src="../_images/apu4_desk_3.jpg" style="width: 957.25px; height: 523.75px;" />
+<a class="reference internal image-reference" href="../images/apu4_desk_3.jpg"><img alt="APU4 desktop back" src="../images/apu4_desk_3.jpg" style="width: 957.25px; height: 523.75px;" />
 </a>
 </figure>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/apu4_desk_4.jpg"><img alt="APU4 desktop back" src="../_images/apu4_desk_4.jpg" style="width: 821.75px; height: 556.25px;" />
+<a class="reference internal image-reference" href="../images/apu4_desk_4.jpg"><img alt="APU4 desktop back" src="../images/apu4_desk_4.jpg" style="width: 821.75px; height: 556.25px;" />
 </a>
 </figure>
 </section>
@@ -479,7 +479,7 @@ HDMI mode.</p>
 <section id="partaker-i5">
 <h2>Partaker i5<a class="headerlink" href="#partaker-i5" title="Link to this heading"></a></h2>
 <figure class="align-default">
-<img alt="../_images/600px-Partaker-i5.jpg" src="../_images/600px-Partaker-i5.jpg" />
+<img alt="../images/600px-Partaker-i5.jpg" src="../images/600px-Partaker-i5.jpg" />
 </figure>
 <p>I believe this is actually the same hardware as the Protectli. I purchased it
 in June 2018. It came pre-loaded with pfSense.</p>
@@ -504,10 +504,10 @@ port is eth0 and the right-most “LAN1” port is eth3.</p>
 <section id="acrosser-and-j190n1">
 <h2>Acrosser AND-J190N1<a class="headerlink" href="#acrosser-and-j190n1" title="Link to this heading"></a></h2>
 <figure class="align-default">
-<img alt="../_images/480px-Acrosser_ANDJ190N1_Front.jpg" src="../_images/480px-Acrosser_ANDJ190N1_Front.jpg" />
+<img alt="../images/480px-Acrosser_ANDJ190N1_Front.jpg" src="../images/480px-Acrosser_ANDJ190N1_Front.jpg" />
 </figure>
 <figure class="align-default">
-<img alt="../_images/480px-Acrosser_ANDJ190N1_Back.jpg" src="../_images/480px-Acrosser_ANDJ190N1_Back.jpg" />
+<img alt="../images/480px-Acrosser_ANDJ190N1_Back.jpg" src="../images/480px-Acrosser_ANDJ190N1_Back.jpg" />
 </figure>
 <p>This microbox network appliance was build to create OpenVPN bridges. It can
 saturate a 100Mbps link. It is a small (serial console only) PC with 6 Gb LAN</p>

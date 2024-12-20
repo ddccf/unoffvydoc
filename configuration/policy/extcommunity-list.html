@@ -7,20 +7,20 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BGP - Extended Community List &mdash; VyOS 1.4.x (sagitta) documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
-      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../../static/sphinx-design.min.css?v=95c83b7e" />
 
   
-    <link rel="shortcut icon" href="../../_static/vyos-logo-icon.png"/>
-      <script src="../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=8f5ed1cd"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../../_static/design-tabs.js?v=f930bc37"></script>
-    <script src="../../_static/js/theme.js"></script>
+    <link rel="shortcut icon" href="../../static/vyos-logo-icon.png"/>
+      <script src="../../static/jquery.js?v=5d32c60e"></script>
+      <script src="../../static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../static/documentation_options.js?v=8f5ed1cd"></script>
+      <script src="../../static/doctools.js?v=9bcbadda"></script>
+      <script src="../../static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="copyright" title="Copyright" href="../../copyright.html" />
@@ -28,29 +28,29 @@
     <link rel="prev" title="BGP - Community List" href="community-list.html" />
     <style>#vyos-header-iframe{position:fixed;top:0;left:0;right:0;z-index:999999999;width:100%;border:none}</style>
     <style>#vyos-footer-iframe{width:100%;border:none}</style>
-    <link href="../../_static/css/custom.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/lists.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/hints.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/headers.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/breadcrumbs.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/linkButtons.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/text.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/leftSidebar.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/scrolls.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/tables.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/installation/running-on-bare-metal.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/code-snippets.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/separate-commands.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/configuration/index.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/datatables.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/custom.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/lists.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/hints.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/headers.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/breadcrumbs.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/linkButtons.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/text.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/leftSidebar.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/scrolls.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/tables.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/installation/running-on-bare-metal.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/code-snippets.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/separate-commands.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/configuration/index.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/datatables.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script type="text/javascript" charset="utf8" src="../../_static/js/datatables.js"></script>
-    <script type="text/javascript" charset="utf8" src="../../_static/js/tables.js"></script>
-    <script type="text/javascript" charset="utf8" src="../../_static/js/codecopier.js"></script>
-    <script type="text/javascript" charset="utf8" src="../../_static/js/sidebar.js"></script>
-    <script type="text/javascript" charset="utf8" src="../../_static/js/footer.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/datatables.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/tables.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/codecopier.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/sidebar.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/footer.js"></script>
     </script>
 
 </head>
@@ -65,7 +65,7 @@
           
           <a href="../../index.html" class="icon icon-home">
             VyOS
-              <img src="../../_static/vyos-logo.png" class="logo" alt="Logo"/>
+              <img src="../../static/vyos-logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -162,7 +162,7 @@
           <li class="breadcrumb-item"><a href="index.html">Policy</a></li>
       <li class="breadcrumb-item active">BGP - Extended Community List</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/configuration/policy/extcommunity-list.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../sources/configuration/policy/extcommunity-list.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>

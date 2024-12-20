@@ -7,20 +7,20 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QoS example &mdash; VyOS 1.4.x (sagitta) documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
-      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../static/sphinx-design.min.css?v=95c83b7e" />
 
   
-    <link rel="shortcut icon" href="../_static/vyos-logo-icon.png"/>
-      <script src="../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=8f5ed1cd"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script src="../_static/js/theme.js"></script>
+    <link rel="shortcut icon" href="../static/vyos-logo-icon.png"/>
+      <script src="../static/jquery.js?v=5d32c60e"></script>
+      <script src="../static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../static/documentation_options.js?v=8f5ed1cd"></script>
+      <script src="../static/doctools.js?v=9bcbadda"></script>
+      <script src="../static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../static/design-tabs.js?v=f930bc37"></script>
+    <script src="../static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="copyright" title="Copyright" href="../copyright.html" />
@@ -28,29 +28,29 @@
     <link rel="prev" title="Inter-VRF Routing over VRF Lite" href="inter-vrf-routing-vrf-lite.html" />
     <style>#vyos-header-iframe{position:fixed;top:0;left:0;right:0;z-index:999999999;width:100%;border:none}</style>
     <style>#vyos-footer-iframe{width:100%;border:none}</style>
-    <link href="../_static/css/custom.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/lists.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/hints.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/headers.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/breadcrumbs.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/linkButtons.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/text.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/leftSidebar.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/scrolls.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/tables.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/installation/running-on-bare-metal.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/code-snippets.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/separate-commands.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/configuration/index.css" rel="stylesheet" type="text/css">
-    <link href="../_static/css/datatables.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/custom.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/lists.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/hints.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/headers.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/breadcrumbs.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/linkButtons.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/text.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/leftSidebar.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/scrolls.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/tables.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/installation/running-on-bare-metal.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/code-snippets.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/separate-commands.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/configuration/index.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/datatables.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script type="text/javascript" charset="utf8" src="../_static/js/datatables.js"></script>
-    <script type="text/javascript" charset="utf8" src="../_static/js/tables.js"></script>
-    <script type="text/javascript" charset="utf8" src="../_static/js/codecopier.js"></script>
-    <script type="text/javascript" charset="utf8" src="../_static/js/sidebar.js"></script>
-    <script type="text/javascript" charset="utf8" src="../_static/js/footer.js"></script>
+    <script type="text/javascript" charset="utf8" src="../static/js/datatables.js"></script>
+    <script type="text/javascript" charset="utf8" src="../static/js/tables.js"></script>
+    <script type="text/javascript" charset="utf8" src="../static/js/codecopier.js"></script>
+    <script type="text/javascript" charset="utf8" src="../static/js/sidebar.js"></script>
+    <script type="text/javascript" charset="utf8" src="../static/js/footer.js"></script>
     </script>
 
 </head>
@@ -65,7 +65,7 @@
           
           <a href="../index.html" class="icon icon-home">
             VyOS
-              <img src="../_static/vyos-logo.png" class="logo" alt="Logo"/>
+              <img src="../static/vyos-logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -149,7 +149,7 @@
           <li class="breadcrumb-item"><a href="index.html">Configuration Blueprints</a></li>
       <li class="breadcrumb-item active">QoS example</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/configexamples/qos.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../sources/configexamples/qos.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -164,7 +164,7 @@
 <p>In this case, we’ll try to make a simple lab using QoS and the general ability of the VyOS system.
 We recommend you to go through the main article about <a class="reference external" href="https://docs.vyos.io/en/latest/configuration/trafficpolicy/index.html">QoS</a> first.</p>
 <p>Using the general schema for example:</p>
-<a class="reference internal image-reference" href="../_images/qos1.png"><img alt="Network Topology Diagram" class="align-center" src="../_images/qos1.png" style="width: 80%;" />
+<a class="reference internal image-reference" href="../images/qos1.png"><img alt="Network Topology Diagram" class="align-center" src="../images/qos1.png" style="width: 80%;" />
 </a>
 <p>We have four hosts on the local network 172.17.1.0/24. All hosts are labeled CS0 by default. We need to replace labels on all hosts except vpc8.
 We will replace the labels on the nearest router “VyOS3” using the IP addresses of the sources.</p>
@@ -207,13 +207,13 @@ set qos interface eth0 egress &#39;vyos3&#39;
 <li><p>ADDRESS30 change CS0 -&gt; CS6 source 172.17.1.4/32</p></li>
 </ul>
 <p>Check the result</p>
-<a class="reference internal image-reference" href="../_images/qos2.png"><img alt="Network Topology Diagram" class="align-center" src="../_images/qos2.png" style="width: 80%;" />
+<a class="reference internal image-reference" href="../images/qos2.png"><img alt="Network Topology Diagram" class="align-center" src="../images/qos2.png" style="width: 80%;" />
 </a>
 <p>Before the interface eth0 on router VyOS3</p>
-<a class="reference internal image-reference" href="../_images/qos3.png"><img alt="Network Topology Diagram" class="align-center" src="../_images/qos3.png" style="width: 80%;" />
+<a class="reference internal image-reference" href="../images/qos3.png"><img alt="Network Topology Diagram" class="align-center" src="../images/qos3.png" style="width: 80%;" />
 </a>
 <p>After the interface eth0 on router VyOS3</p>
-<a class="reference internal image-reference" href="../_images/qos4.png"><img alt="Network Topology Diagram" class="align-center" src="../_images/qos4.png" style="width: 80%;" />
+<a class="reference internal image-reference" href="../images/qos4.png"><img alt="Network Topology Diagram" class="align-center" src="../images/qos4.png" style="width: 80%;" />
 </a>
 <p>On the router, VyOS4 set all traffic as CS4. We have to configure the default class and class for changing all labels from CS0 to CS4</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>set interfaces ethernet eth0 address &#39;10.2.1.100/24&#39;
@@ -232,7 +232,7 @@ set qos interface eth0 egress &#39;vyos4&#39;
 </pre></div>
 </div>
 <p>Next on the router VyOS2 we will change labels on all incoming traffic only from CS4-&gt; CS6</p>
-<a class="reference internal image-reference" href="../_images/qos5.png"><img alt="Network Topology Diagram" class="align-center" src="../_images/qos5.png" style="width: 80%;" />
+<a class="reference internal image-reference" href="../images/qos5.png"><img alt="Network Topology Diagram" class="align-center" src="../images/qos5.png" style="width: 80%;" />
 </a>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>set interfaces ethernet eth0 address &#39;10.1.1.1/24&#39;
 set interfaces ethernet eth1 address &#39;10.2.1.1/24&#39;
@@ -251,22 +251,22 @@ set qos policy shaper vyos2 default queue-type &#39;fair-queue&#39;
 set qos interface eth2 egress &#39;vyos2&#39;
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../_images/qos6.png"><img alt="Network Topology Diagram" class="align-center" src="../_images/qos6.png" style="width: 80%;" />
+<a class="reference internal image-reference" href="../images/qos6.png"><img alt="Network Topology Diagram" class="align-center" src="../images/qos6.png" style="width: 80%;" />
 </a>
 <ul class="simple">
 <li><p>172.17.1.2/24 CS0</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/qos7.png"><img alt="Network Topology Diagram" class="align-center" src="../_images/qos7.png" style="width: 80%;" />
+<a class="reference internal image-reference" href="../images/qos7.png"><img alt="Network Topology Diagram" class="align-center" src="../images/qos7.png" style="width: 80%;" />
 </a>
 <ul class="simple">
 <li><p>172.17.1.2/24 CS0 - &gt; CS4</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/qos8.png"><img alt="Network Topology Diagram" class="align-center" src="../_images/qos8.png" style="width: 80%;" />
+<a class="reference internal image-reference" href="../images/qos8.png"><img alt="Network Topology Diagram" class="align-center" src="../images/qos8.png" style="width: 80%;" />
 </a>
 <ul class="simple">
 <li><p>172.17.1.2/24 CS4 - &gt; CS5</p></li>
 </ul>
-<a class="reference internal image-reference" href="../_images/qos9.png"><img alt="Network Topology Diagram" class="align-center" src="../_images/qos9.png" style="width: 80%;" />
+<a class="reference internal image-reference" href="../images/qos9.png"><img alt="Network Topology Diagram" class="align-center" src="../images/qos9.png" style="width: 80%;" />
 </a>
 <p>In the end, on the router “VyOS2” we will set outgoing bandwidth limits between the “VyOS3” and “VyOS1” routers. Let’s set a limit for IP 10.1.1.100 = 5 Mbps(Tx). We will check the result of the work with the help of the “iPerf” utility.</p>
 <p>Set up bandwidth limits on the eth2 interface of the router “VyOS2”.</p>
@@ -283,7 +283,7 @@ match VyOS3 {
 </pre></div>
 </div>
 <p>Check the result.</p>
-<a class="reference internal image-reference" href="../_images/qos10.png"><img alt="Network Topology Diagram" class="align-center" src="../_images/qos10.png" style="width: 80%;" />
+<a class="reference internal image-reference" href="../images/qos10.png"><img alt="Network Topology Diagram" class="align-center" src="../images/qos10.png" style="width: 80%;" />
 </a>
 <p>As we see shaper is working and the traffic will not work over 5 Mbit/s.</p>
 </section>

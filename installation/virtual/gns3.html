@@ -7,20 +7,20 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Running on GNS3 &mdash; VyOS 1.4.x (sagitta) documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
-      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../../static/sphinx-design.min.css?v=95c83b7e" />
 
   
-    <link rel="shortcut icon" href="../../_static/vyos-logo-icon.png"/>
-      <script src="../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=8f5ed1cd"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../../_static/design-tabs.js?v=f930bc37"></script>
-    <script src="../../_static/js/theme.js"></script>
+    <link rel="shortcut icon" href="../../static/vyos-logo-icon.png"/>
+      <script src="../../static/jquery.js?v=5d32c60e"></script>
+      <script src="../../static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../static/documentation_options.js?v=8f5ed1cd"></script>
+      <script src="../../static/doctools.js?v=9bcbadda"></script>
+      <script src="../../static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="copyright" title="Copyright" href="../../copyright.html" />
@@ -28,29 +28,29 @@
     <link rel="prev" title="Running on VMware ESXi" href="vmware.html" />
     <style>#vyos-header-iframe{position:fixed;top:0;left:0;right:0;z-index:999999999;width:100%;border:none}</style>
     <style>#vyos-footer-iframe{width:100%;border:none}</style>
-    <link href="../../_static/css/custom.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/lists.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/hints.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/headers.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/breadcrumbs.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/linkButtons.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/text.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/leftSidebar.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/scrolls.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/tables.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/installation/running-on-bare-metal.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/code-snippets.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/separate-commands.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/configuration/index.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/datatables.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/custom.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/lists.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/hints.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/headers.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/breadcrumbs.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/linkButtons.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/text.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/leftSidebar.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/scrolls.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/tables.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/installation/running-on-bare-metal.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/code-snippets.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/separate-commands.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/configuration/index.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/datatables.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script type="text/javascript" charset="utf8" src="../../_static/js/datatables.js"></script>
-    <script type="text/javascript" charset="utf8" src="../../_static/js/tables.js"></script>
-    <script type="text/javascript" charset="utf8" src="../../_static/js/codecopier.js"></script>
-    <script type="text/javascript" charset="utf8" src="../../_static/js/sidebar.js"></script>
-    <script type="text/javascript" charset="utf8" src="../../_static/js/footer.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/datatables.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/tables.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/codecopier.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/sidebar.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/footer.js"></script>
     </script>
 
 </head>
@@ -65,7 +65,7 @@
           
           <a href="../../index.html" class="icon icon-home">
             VyOS
-              <img src="../../_static/vyos-logo.png" class="logo" alt="Logo"/>
+              <img src="../../static/vyos-logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -153,7 +153,7 @@
           <li class="breadcrumb-item"><a href="index.html">Running VyOS in Virtual Environments</a></li>
       <li class="breadcrumb-item active">Running on GNS3</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/installation/virtual/gns3.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../sources/installation/virtual/gns3.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -185,53 +185,53 @@ in GNS3.</p>
 <p>Go to the GNS3 <strong>File</strong> menu, click <strong>New template</strong> and choose select
 <strong>Manually create a new Template</strong>.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-01.png" src="../../_images/gns3-01.png" />
+<img alt="../../images/gns3-01.png" src="../../images/gns3-01.png" />
 </figure>
 <p>Select <strong>Quemu VMs</strong> and then click on the <code class="docutils literal notranslate"><span class="pre">New</span></code> button.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-02.png" src="../../_images/gns3-02.png" />
+<img alt="../../images/gns3-02.png" src="../../images/gns3-02.png" />
 </figure>
 <p>Write a name for your VM, for instance “VyOS”, and click <code class="docutils literal notranslate"><span class="pre">Next</span></code>.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-03.png" src="../../_images/gns3-03.png" />
+<img alt="../../images/gns3-03.png" src="../../images/gns3-03.png" />
 </figure>
 <p>Select <strong>qemu-system-x86_64</strong> as Quemu binary, then <strong>512MB</strong> of RAM
 and click <code class="docutils literal notranslate"><span class="pre">Next</span></code>.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-04.png" src="../../_images/gns3-04.png" />
+<img alt="../../images/gns3-04.png" src="../../images/gns3-04.png" />
 </figure>
 <p>Select <strong>telnet</strong> as your console type and click <code class="docutils literal notranslate"><span class="pre">Next</span></code>.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-05.png" src="../../_images/gns3-05.png" />
+<img alt="../../images/gns3-05.png" src="../../images/gns3-05.png" />
 </figure>
 <p>Select <strong>New image</strong> for the base disk image of your VM and click
 <code class="docutils literal notranslate"><span class="pre">Create</span></code>.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-06.png" src="../../_images/gns3-06.png" />
+<img alt="../../images/gns3-06.png" src="../../images/gns3-06.png" />
 </figure>
 <p>Use the defaults in the <strong>Binary and format</strong> window and click
 <code class="docutils literal notranslate"><span class="pre">Next</span></code>.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-07.png" src="../../_images/gns3-07.png" />
+<img alt="../../images/gns3-07.png" src="../../images/gns3-07.png" />
 </figure>
 <p>Use the defaults in the <strong>Qcow2 options</strong> window and click <code class="docutils literal notranslate"><span class="pre">Next</span></code>.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-08.png" src="../../_images/gns3-08.png" />
+<img alt="../../images/gns3-08.png" src="../../images/gns3-08.png" />
 </figure>
 <p>Set the disk size to 2000 MiB, and click <code class="docutils literal notranslate"><span class="pre">Finish</span></code> to end the <strong>Quemu
 image creator</strong>.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-09.png" src="../../_images/gns3-09.png" />
+<img alt="../../images/gns3-09.png" src="../../images/gns3-09.png" />
 </figure>
 <p>Click <code class="docutils literal notranslate"><span class="pre">Finish</span></code> to end the <strong>New QEMU VM template</strong> wizard.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-10.png" src="../../_images/gns3-10.png" />
+<img alt="../../images/gns3-10.png" src="../../images/gns3-10.png" />
 </figure>
 <p>Now the VM settings have to be edited.</p>
 <p>Being again at the <strong>Preferences</strong> window, having <strong>Qemu VMs</strong>
 selected and having our new VM selected, click the <code class="docutils literal notranslate"><span class="pre">Edit</span></code> button.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-11.png" src="../../_images/gns3-11.png" />
+<img alt="../../images/gns3-11.png" src="../../images/gns3-11.png" />
 </figure>
 <p>In the <strong>General settings</strong> tab of your <strong>QEMU VM template
 configuration</strong>, do the following:</p>
@@ -242,17 +242,17 @@ have representing your VM.</p></li>
 <li><p>Set the <strong>Boot priority</strong> to <strong>CD/DVD-ROM</strong>.</p></li>
 </ul>
 <figure class="align-default">
-<img alt="../../_images/gns3-12.png" src="../../_images/gns3-12.png" />
+<img alt="../../images/gns3-12.png" src="../../images/gns3-12.png" />
 </figure>
 <p>At the <strong>HDD</strong> tab, change the Disk interface to <strong>sata</strong> to speed up
 the boot process.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-13.png" src="../../_images/gns3-13.png" />
+<img alt="../../images/gns3-13.png" src="../../images/gns3-13.png" />
 </figure>
 <p>At the <strong>CD/DVD</strong> tab click on <code class="docutils literal notranslate"><span class="pre">Browse...</span></code> and locate the VyOS image
 you want to install.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-14.png" src="../../_images/gns3-14.png" />
+<img alt="../../images/gns3-14.png" src="../../images/gns3-14.png" />
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -263,17 +263,17 @@ default image directory when you are asked.</p>
 <strong>Name format</strong> to <strong>eth{0}</strong> and the <strong>Type</strong> to <strong>Paravirtualized
 Network I/O (virtio-net-pci)</strong>.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-15.png" src="../../_images/gns3-15.png" />
+<img alt="../../images/gns3-15.png" src="../../images/gns3-15.png" />
 </figure>
 <p>In the <strong>Advanced</strong> tab, unmark the checkbox <strong>Use as a linked base
 VM</strong> and click <code class="docutils literal notranslate"><span class="pre">OK</span></code>, which will save and close the <strong>QEMU VM template
 configuration</strong> window.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-16.png" src="../../_images/gns3-16.png" />
+<img alt="../../images/gns3-16.png" src="../../images/gns3-16.png" />
 </figure>
 <p>At the general <strong>Preferences</strong> window, click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to save and close.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-17.png" src="../../_images/gns3-17.png" />
+<img alt="../../images/gns3-17.png" src="../../images/gns3-17.png" />
 </figure>
 </section>
 <section id="vyos-installation">
@@ -301,21 +301,21 @@ VyOS in our labs.</p>
 necessary as outlined below:</p>
 <p><strong>General settings</strong> tab: Set the boot priority to <strong>HDD</strong></p>
 <figure class="align-default">
-<img alt="../../_images/gns3-20.png" src="../../_images/gns3-20.png" />
+<img alt="../../images/gns3-20.png" src="../../images/gns3-20.png" />
 </figure>
 <p><strong>CD/DVD</strong> tab: Unmount the installation image file by clearing the
 <strong>Image</strong> entry field.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-21.png" src="../../_images/gns3-21.png" />
+<img alt="../../images/gns3-21.png" src="../../images/gns3-21.png" />
 </figure>
 <p>Set the number of required network adapters, for example <strong>4</strong>.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-215.png" src="../../_images/gns3-215.png" />
+<img alt="../../images/gns3-215.png" src="../../images/gns3-215.png" />
 </figure>
 <p><strong>Advanced</strong> settings tab: Mark the checkbox <strong>Use as a linked
 base VM</strong> and click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to save the changes.</p>
 <figure class="align-default">
-<img alt="../../_images/gns3-22.png" src="../../_images/gns3-22.png" />
+<img alt="../../images/gns3-22.png" src="../../images/gns3-22.png" />
 </figure>
 <p>The VyOS VM is now ready to be deployed.</p>
 </section>

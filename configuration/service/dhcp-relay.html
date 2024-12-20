@@ -7,20 +7,20 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DHCP Relay &mdash; VyOS 1.4.x (sagitta) documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
-      <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../../static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../../static/sphinx-design.min.css?v=95c83b7e" />
 
   
-    <link rel="shortcut icon" href="../../_static/vyos-logo-icon.png"/>
-      <script src="../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=8f5ed1cd"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="../../_static/design-tabs.js?v=f930bc37"></script>
-    <script src="../../_static/js/theme.js"></script>
+    <link rel="shortcut icon" href="../../static/vyos-logo-icon.png"/>
+      <script src="../../static/jquery.js?v=5d32c60e"></script>
+      <script src="../../static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../static/documentation_options.js?v=8f5ed1cd"></script>
+      <script src="../../static/doctools.js?v=9bcbadda"></script>
+      <script src="../../static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="copyright" title="Copyright" href="../../copyright.html" />
@@ -28,29 +28,29 @@
     <link rel="prev" title="Console Server" href="console-server.html" />
     <style>#vyos-header-iframe{position:fixed;top:0;left:0;right:0;z-index:999999999;width:100%;border:none}</style>
     <style>#vyos-footer-iframe{width:100%;border:none}</style>
-    <link href="../../_static/css/custom.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/lists.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/hints.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/headers.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/breadcrumbs.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/linkButtons.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/text.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/leftSidebar.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/scrolls.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/tables.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/installation/running-on-bare-metal.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/code-snippets.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/separate-commands.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/configuration/index.css" rel="stylesheet" type="text/css">
-    <link href="../../_static/css/datatables.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/custom.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/lists.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/hints.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/headers.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/breadcrumbs.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/linkButtons.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/text.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/leftSidebar.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/scrolls.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/tables.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/installation/running-on-bare-metal.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/code-snippets.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/separate-commands.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/configuration/index.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/datatables.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script type="text/javascript" charset="utf8" src="../../_static/js/datatables.js"></script>
-    <script type="text/javascript" charset="utf8" src="../../_static/js/tables.js"></script>
-    <script type="text/javascript" charset="utf8" src="../../_static/js/codecopier.js"></script>
-    <script type="text/javascript" charset="utf8" src="../../_static/js/sidebar.js"></script>
-    <script type="text/javascript" charset="utf8" src="../../_static/js/footer.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/datatables.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/tables.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/codecopier.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/sidebar.js"></script>
+    <script type="text/javascript" charset="utf8" src="../../static/js/footer.js"></script>
     </script>
 
 </head>
@@ -65,7 +65,7 @@
           
           <a href="../../index.html" class="icon icon-home">
             VyOS
-              <img src="../../_static/vyos-logo.png" class="logo" alt="Logo"/>
+              <img src="../../static/vyos-logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -176,7 +176,7 @@
           <li class="breadcrumb-item"><a href="index.html">Service</a></li>
       <li class="breadcrumb-item active">DHCP Relay</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/configuration/service/dhcp-relay.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../sources/configuration/service/dhcp-relay.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -301,7 +301,7 @@ replaced with the router’s own relay information set.</p></li>
 server at 10.0.1.4 on <code class="docutils literal notranslate"><span class="pre">eth2</span></code>.</p></li>
 </ul>
 <figure class="align-default" id="id6">
-<a class="reference internal image-reference" href="../../_images/service_dhcp-relay01.png"><img alt="DHCP relay example" src="../../_images/service_dhcp-relay01.png" style="width: 505.6px; height: 203.20000000000002px;" />
+<a class="reference internal image-reference" href="../../images/service_dhcp-relay01.png"><img alt="DHCP relay example" src="../../images/service_dhcp-relay01.png" style="width: 505.6px; height: 203.20000000000002px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">DHCP relay example</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
@@ -400,7 +400,7 @@ set automatically if more than one listening interfaces are in use.</p>
 <li><p>External DHCPv6 server is at 2001:db8::4</p></li>
 </ul>
 <figure class="align-default" id="id7">
-<a class="reference internal image-reference" href="../../_images/service_dhcpv6-relay01.png"><img alt="DHCPv6 relay example" src="../../_images/service_dhcpv6-relay01.png" style="width: 491.20000000000005px; height: 185.60000000000002px;" />
+<a class="reference internal image-reference" href="../../images/service_dhcpv6-relay01.png"><img alt="DHCPv6 relay example" src="../../images/service_dhcpv6-relay01.png" style="width: 491.20000000000005px; height: 185.60000000000002px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">DHCPv6 relay example</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
